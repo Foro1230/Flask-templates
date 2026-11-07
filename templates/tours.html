@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}Тури - Мандрівка{% endblock %}
+
+{% block content %}
+<section class="content">
+    <h1>Наші тури</h1>
+    <div class="cards">
+        <article class="card">
+            <img src="{{ url_for('static', filename='images/italy.png') }}" alt="Неаполь, Везувій та узбережжя Італії">
+            <div class="card-text"><h2>Подорож до Італії</h2><p>Міста, узбережжя та старовинні пам’ятки півдня Італії.</p><strong>від 18 900 грн</strong></div>
+        </article>
+        <article class="card">
+            <img src="{{ url_for('static', filename='images/antarctica.png') }}" alt="Крижаний краєвид Антарктиди з корабля">
+            <div class="card-text"><h2>Подорож до Антарктиди</h2><p>Крижаний пейзаж, гори та незабутня пригода на кораблі.</p><strong>від 89 000 грн</strong></div>
+        </article>
+        <article class="card">
+            <img src="{{ url_for('static', filename='images/tunisia.png') }}" alt="Курортне узбережжя Тунісу">
+            <div class="card-text"><h2>Відпочинок у Тунісі</h2><p>Сонячне узбережжя, море та відпочинок у курортному місті.</p><strong>від 22 500 грн</strong></div>
+        </article>
+    </div>
+</section>
+{% endblock %}

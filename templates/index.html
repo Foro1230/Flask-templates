@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Головна - Мандрівка{% endblock %}
+
+{% block content %}
+<section class="banner">
+    <img src="{{ url_for('static', filename='images/santorini.png') }}" alt="Захід сонця над Санторіні">
+    <div>
+        <h1>Відкрий світ разом з нами!</h1>
+        <p>Допоможемо спланувати незабутню подорож для всієї родини.</p>
+        <a class="button" href="{{ url_for('tours') }}">Переглянути тури</a>
+    </div>
+</section>
+<section class="content">
+    <h2>Подорожуй із задоволенням</h2>
+    <p>«Мандрівка» - туристична агенція, яка допомагає знаходити цікаві місця, планувати відпочинок і створювати гарні спогади.</p>
+</section>
+{% endblock %}

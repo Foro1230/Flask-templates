@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: #263c34;
+    background: #f7f8f4;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 18px 8%;
+    background: white;
+}
+
+.logo {
+    color: #426d58;
+    font-size: 23px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+nav a {
+    color: #263c34;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #e27e50;
+}
+
+.banner {
+    position: relative;
+    min-height: 370px;
+    display: flex;
+    align-items: center;
+    padding: 40px 10%;
+    overflow: hidden;
+    color: white;
+    background: #477a78;
+}
+
+.banner img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: .7;
+}
+
+.banner div {
+    position: relative;
+    max-width: 500px;
+}
+
+.banner h1 {
+    font-size: 42px;
+    line-height: 1.2;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 16px;
+    color: #263c34;
+    background: white;
+    text-decoration: none;
+}
+
+.content {
+    max-width: 1050px;
+    margin: 40px auto;
+    padding: 0 24px;
+}
+
+.content h1, .content h2 {
+    color: #426d58;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    overflow: hidden;
+    background: white;
+}
+
+.card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.card-text {
+    padding: 12px 16px 18px;
+}
+
+.card-text h2 {
+    font-size: 20px;
+}
+
+.card-text strong {
+    color: #426d58;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 14px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.about-image {
+    width: 100%;
+    max-height: 330px;
+    object-fit: cover;
+}
+
+.contact-box {
+    padding: 18px 24px;
+    background: white;
+}
+
+footer {
+    margin-top: 60px;
+    padding: 18px;
+    color: white;
+    background: #263c34;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    nav {
+        gap: 10px 16px;
+    }
+
+    .banner {
+        min-height: 320px;
+        padding: 28px 7%;
+    }
+
+    .banner h1 {
+        font-size: 34px;
+    }
+
+    .cards, .gallery {
+        grid-template-columns: 1fr;
+    }
+}

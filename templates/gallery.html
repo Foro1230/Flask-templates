@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}Галерея - Мандрівка{% endblock %}
+
+{% block content %}
+<section class="content">
+    <h1>Галерея подорожей</h1>
+    <p>Кілька красивих місць, які можна відвідати з нами.</p>
+    <div class="gallery">
+        <img src="{{ url_for('static', filename='images/antarctica.png') }}" alt="Подорож кораблем серед льодовиків Антарктиди">
+        <img src="{{ url_for('static', filename='images/italy.png') }}" alt="Міста та узбережжя Італії">
+        <img src="{{ url_for('static', filename='images/tunisia.png') }}" alt="Біле місто біля моря в Тунісі">
+        <img src="{{ url_for('static', filename='images/castle.png') }}" alt="Старовинний замок на пагорбі">
+        <img src="{{ url_for('static', filename='images/beach.png') }}" alt="Пляж і бірюзове море з висоти">
+        <img src="{{ url_for('static', filename='images/island.png') }}" alt="Острів серед синього моря">
+        <img src="{{ url_for('static', filename='images/santorini.png') }}" alt="Санторіні під час заходу сонця">
+    </div>
+</section>
+{% endblock %}
